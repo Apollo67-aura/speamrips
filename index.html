@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPEAM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+<div class="logo">SPEAM</div>
+
+<nav>
+<a href="#" onclick="showPage('home')">Home</a>
+<a href="#" onclick="showPage('store')">Loja</a>
+<a href="#" onclick="showPage('library')">Biblioteca</a>
+<a href="#" onclick="showPage('community')">Comunidade</a>
+<a href="#" onclick="showPage('login')">Login</a>
+</nav>
+</header>
+
+<section id="home" class="page active">
+<div class="hero">
+<h1>SPEAM</h1>
+<p>A próxima geração das plataformas gamer</p>
+<button onclick="showPage('store')">Explorar Jogos</button>
+</div>
+
+<div class="featured">
+<h2>DESTAQUES</h2>
+
+<div class="featured-grid">
+<div class="featured-card">
+<img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop">
+</div>
+
+<div class="featured-card">
+<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop">
+</div>
+
+<div class="featured-card">
+<img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop">
+</div>
+</div>
+</div>
+</section>
+
+<section id="store" class="page">
+<h1 class="title">Loja</h1>
+
+<div class="games">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop">
+<div class="card-body">
+<h2>Dark Kingdoms</h2>
+<p>Inspirado em Dark Souls e Elden Ring. Explore um mundo sombrio cheio de bosses épicos.</p>
+<span>R$ 249,90</span>
+<button onclick="buyGame('Dark Kingdoms')">Comprar</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200&auto=format&fit=crop">
+<div class="card-body">
+<h2>Vice City Legends</h2>
+<p>Mundo aberto inspirado em GTA V com carros, crimes e cidades gigantescas.</p>
+<span>R$ 299,90</span>
+<button onclick="buyGame('Vice City Legends')">Comprar</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop">
+<div class="card-body">
+<h2>Eternal War</h2>
+<p>Batalhas medievais cinematográficas com combate brutal e multiplayer online.</p>
+<span>R$ 199,90</span>
+<button onclick="buyGame('Eternal War')">Comprar</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?q=80&w=1200&auto=format&fit=crop">
+<div class="card-body">
+<h2>Neon Streets</h2>
+<p>Cyberpunk futurista com carros voadores, gangues e gráficos ultra realistas.</p>
+<span>R$ 179,90</span>
+<button onclick="buyGame('Neon Streets')">Comprar</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?q=80&w=1200&auto=format&fit=crop">
+<div class="card-body">
+<h2>Shadow Hunter</h2>
+<p>RPG de fantasia sombria com dragões, magia e exploração de castelos gigantes.</p>
+<span>R$ 219,90</span>
+<button onclick="buyGame('Shadow Hunter')">Comprar</button>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?q=80&w=1200&auto=format&fit=crop">
+<div class="card-body">
+<h2>Warzone X</h2>
+<p>FPS competitivo inspirado em Call of Duty com armas modernas e ranked.</p>
+<span>R$ 129,90</span>
+<button onclick="buyGame('Warzone X')">Comprar</button>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="library" class="page">
+<h1 class="title">Biblioteca</h1>
+
+<div class="library-card">
+<h2>Dark Kingdoms</h2>
+<p>Instalado • Atualizado recentemente</p>
+<button onclick="alert('Iniciando jogo...')">Jogar</button>
+</div>
+
+<div class="library-card">
+<h2>Vice City Legends</h2>
+<p>Instalado • Multiplayer online</p>
+<button onclick="alert('Abrindo launcher...')">Jogar</button>
+</div>
+</section>
+
+<section id="community" class="page">
+<h1 class="title">Comunidade</h1>
+
+<div class="community-box">
+<p><strong>Lucas:</strong> Dark Kingdoms é GOTY fácil.</p>
+<p><strong>Ana:</strong> Vice City Legends parece GTA VI.</p>
+<p><strong>Pedro:</strong> alguém pra ranked no Warzone X?</p>
+</div>
+</section>
+
+<section id="login" class="page">
+<div class="login-box">
+<h1>Login SPEAM</h1>
+
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Senha">
+
+<button onclick="login()">Entrar</button>
+</div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
