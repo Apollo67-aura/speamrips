@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPEAM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">SPEAM</div>
+
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('store')">Loja</a>
+    <a href="#" onclick="showPage('library')">Biblioteca</a>
+    <a href="#" onclick="showPage('login')">Login</a>
+    <a href="#" onclick="showPage('community')">Comunidade</a>
+  </nav>
+</header>
+
+<section id="home" class="page active">
+  <div class="hero">
+    <h1>SPEAM</h1>
+    <p>A plataforma gamer inspirada na Steam</p>
+    <button onclick="showPage('store')">Entrar na Loja</button>
+  </div>
+
+  <div class="banner">
+    <h2>PROMOÇÕES INSANAS</h2>
+    <p>Até 90% OFF em jogos simulados</p>
+  </div>
+</section>
+
+<section id="store" class="page">
+  <h1 class="title">Loja</h1>
+
+  <div class="games">
+
+    <div class="card">
+      <img src="https://picsum.photos/400/220?1">
+      <div class="card-body">
+        <h2>Cyber Warriors</h2>
+        <p>FPS Futurista</p>
+        <span>R$ 199,90</span>
+        <button onclick="buyGame('Cyber Warriors')">Comprar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/400/220?2">
+      <div class="card-body">
+        <h2>Galaxy Arena</h2>
+        <p>Batalhas espaciais</p>
+        <span>R$ 149,90</span>
+        <button onclick="buyGame('Galaxy Arena')">Comprar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/400/220?3">
+      <div class="card-body">
+        <h2>Shadow Ops</h2>
+        <p>Ação tática</p>
+        <span>R$ 99,90</span>
+        <button onclick="buyGame('Shadow Ops')">Comprar</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="library" class="page">
+  <h1 class="title">Biblioteca</h1>
+
+  <div class="library-box">
+    <h2>Cyber Warriors</h2>
+    <button onclick="alert('Iniciando jogo...')">Jogar</button>
+  </div>
+</section>
+
+<section id="login" class="page">
+  <div class="login-box">
+    <h1>Login</h1>
+
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Senha">
+
+    <button onclick="login()">Entrar</button>
+  </div>
+</section>
+
+<section id="community" class="page">
+  <h1 class="title">Comunidade</h1>
+
+  <div class="chat">
+    <p><strong>Lucas:</strong> alguém joga Cyber Warriors?</p>
+    <p><strong>Ana:</strong> melhor FPS do ano!</p>
+    <p><strong>Pedro:</strong> bora ranked</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
